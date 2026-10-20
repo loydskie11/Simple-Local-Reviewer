@@ -24,10 +24,12 @@
       </div>
     </aside>
     <main class="main-content">
-      <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="breadcrumbs">AP6 Cross-Platform <span>/</span> <strong id="pageTitle">Dashboard</strong></div><div class="top-actions"><button class="icon-button" title="Notifications">♧</button><div class="avatar">A</div></div></header>
+      <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="breadcrumbs">AP6 Cross-Platform <span>/</span> <strong id="pageTitle">Dashboard</strong></div><div class="top-actions"><button class="icon-button" id="themeToggle" title="Toggle dark mode">☾</button><button class="profile-trigger" id="profileTrigger" title="Edit profile"><span class="avatar" id="avatar">A</span></button></div></header>
       <div id="app"></div>
     </main>
   </div>
+  <input type="file" id="profileUpload" accept="image/*" hidden />
+  <section class="profile-panel" id="profilePanel" hidden><div class="profile-panel-head"><div><p class="eyebrow">Your profile</p><h2>Personalize your reviewer</h2></div><button class="close-profile" id="closeProfile">×</button></div><label for="profileName">Display name</label><input id="profileName" class="profile-input" type="text" maxlength="32" placeholder="Your name" /><div class="profile-upload-row"><div class="avatar avatar-large" id="profilePreview">A</div><div><button class="secondary-btn" id="choosePhoto">Upload profile photo</button><p>Images are saved locally in this browser.</p></div></div><button class="primary-btn" id="saveProfile">Save profile</button></section>
   <div class="toast" id="toast" role="status"></div>
   <script src="app.js"></script>
 </body>
