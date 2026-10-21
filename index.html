@@ -10,6 +10,7 @@
 <body>
   <div class="app-shell">
     <aside class="sidebar">
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close navigation">×</button>
       <div class="brand"><span class="brand-mark">✦</span><span>Reviewly</span></div>
       <div class="course-switcher"><span class="course-dot"></span><span>AP6 Cross-Platform</span><span class="chevron">⌄</span></div>
       <nav class="nav" aria-label="Main navigation">
@@ -23,6 +24,7 @@
         <button class="nav-item muted" id="resetProgress"><span>↺</span> Reset progress</button>
       </div>
     </aside>
+    <button class="sidebar-backdrop" id="sidebarBackdrop" aria-label="Close navigation"></button>
     <main class="main-content">
       <header class="topbar"><button class="mobile-menu" id="mobileMenu">☰</button><div class="breadcrumbs">AP6 Cross-Platform <span>/</span> <strong id="pageTitle">Dashboard</strong></div><div class="top-actions"><button class="icon-button" id="themeToggle" title="Toggle dark mode">☾</button><button class="profile-trigger" id="profileTrigger" title="Edit profile"><span class="avatar" id="avatar">A</span></button></div></header>
       <div id="app"></div>
